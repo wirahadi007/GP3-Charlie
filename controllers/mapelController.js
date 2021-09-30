@@ -21,9 +21,7 @@ const mapelController= {
             let {nama_mapel} = req.body;
     
             let data = await Mapel.create({nama_mapel});
-            // let group = await Group.findByPk(groupId)
-    
-            // await data.addGroup(group)
+            
     
             res.status(201).json({
                 status: 'success',

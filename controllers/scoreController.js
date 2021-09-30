@@ -21,9 +21,6 @@ const scoreController= {
             let {studentId,MapelId,grade} = req.body;
     
             let data = await Score.create({studentId, MapelId, grade});
-            // let group = await Group.findByPk(groupId)
-    
-            // await data.addGroup(group)
     
             res.status(201).json({
                 status: 'success',
